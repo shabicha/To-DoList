@@ -1,3 +1,5 @@
 # QTMA Software Development Curriculum 
 
-Built this to create a development curriculum for QTMA's Software Developer. These training modules encompass frontend & backend concepts based in the MERN stack. 
+Built to create a comprehensive development curriculum for QTMA's Software Development training program. The curriculum focuses on both frontend and backend development concepts using the MERN stack (MongoDB, Express, React, and Node.js).
+
+
