@@ -22,14 +22,13 @@ const App = () => {
   const addTodo = async (e) => {
     e.preventDefault();
     const data = { title: newItem };
-    axios.post('http://localhost:5554/api/todos', data)
-      .then(response => {
-        setTodos([...todos, response.data]);
-        setNewItem('');
-      })
-      .catch(error => {
-        console.error("Error adding todo:", error);
-      });
+    try {
+      const response = await axios.post('http://localhost:5554/api/todos', data);
+      setTodos([...todos, response.data]);
+      setNewItem('');
+    } catch (error) {
+      console.error("Error adding todo:", error);
+    }
   };
 
   const deleteTodo = async (id) => {
